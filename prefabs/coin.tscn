@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3ybvohismi36"]
+
+[ext_resource type="PackedScene" uid="uid://do0k1laee8hw0" path="res://Objects/moeda_dourada.tscn" id="1_iwb8g"]
+[ext_resource type="Script" path="res://Scripts/coin.gd" id="1_l3ikw"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_g580i"]
+height = 0.337509
+radius = 0.189326
+
+[node name="Coin" type="Area3D"]
+script = ExtResource("1_l3ikw")
+
+[node name="coin-gold" parent="." instance=ExtResource("1_iwb8g")]
+unique_name_in_owner = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.205236, 0)
+shape = SubResource("CylinderShape3D_g580i")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

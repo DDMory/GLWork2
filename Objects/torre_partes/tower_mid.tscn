@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpdtvhcxc7tkt"]
+
+[ext_resource type="PackedScene" uid="uid://bhcyg4mtxuufy" path="res://Estudos_3D/models/GLB format-castleKit/tower-square-mid-windows.glb" id="1_l2apw"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_f1dm7"]
+points = PackedVector3Array(0.465, 1.01, 0.464909, 0.465, 1.01, -0.465, -0.465, 1.01, 0.464909, 0.465, 0, 0.464909, -0.465, 1.01, -0.465, 0.465, 0, -0.465, -0.465, 0, 0.464909, -0.465, 0, -0.465)
+
+[node name="tower-square-mid-windows" instance=ExtResource("1_l2apw")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+shape = SubResource("ConvexPolygonShape3D_f1dm7")

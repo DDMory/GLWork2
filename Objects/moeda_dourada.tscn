@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://do0k1laee8hw0"]
+
+[ext_resource type="PackedScene" uid="uid://dvjjbhvq33i5x" path="res://Estudos_3D/models/GLB format-plataform/coin-gold.glb" id="1_ioyfc"]
+
+[node name="coin-gold" instance=ExtResource("1_ioyfc")]

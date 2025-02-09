@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://yps1u5plrj4e"]
+
+[ext_resource type="PackedScene" uid="uid://c566rpafmvq5o" path="res://Estudos_3D/models/GLB format-castleKit/rocks-large.glb" id="1_28v6y"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_m40kp"]
+points = PackedVector3Array(0.600407, 0, 0.271451, 0.0682921, 0.5, 0.115073, 0.0921533, 0.384984, 0.410014, 0.389653, 0.0345536, 0.557946, 0.395178, 0, 0.578797, 0.600407, 0, -0.117053, -0.0876867, 0.5, 0.205073, -0.0278575, 0.384984, 0.479296, 0.0682921, 0.5, -0.0649266, 0.19277, 0.0508516, 0.643459, 0.184659, 0, 0.674075, -0.0687624, 0, -0.674075, -0.0769903, 0.0508516, -0.643591, 0.22192, 0.165867, -0.273431, -0.243548, 0.5, 0.115073, -0.147868, 0.384984, 0.410014, -0.600407, 0, 0.288211, -0.322419, 0, 0.44868, -0.0876867, 0.5, -0.154926, -0.176314, 0, -0.612052, -0.145753, 0.0508516, -0.60387, -0.243548, 0.5, -0.0649266, -0.489212, 0.165867, 0.223944, -0.600407, 0, -0.0329911, -0.489212, 0.165867, 0.0312756)
+
+[node name="rocks-large" instance=ExtResource("1_28v6y")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+shape = SubResource("ConvexPolygonShape3D_m40kp")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c174rkyn8xp6l"]
+
+[ext_resource type="PackedScene" uid="uid://dfhhla3psgdye" path="res://Estudos_3D/models/GLB format-castleKit/wall-half.glb" id="1_bjofm"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kq52d"]
+points = PackedVector3Array(-0.5, 0, -0.5, 0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, 1.30987, -0.5, 0.5, 0, 0.5, 0.5, 1.17997, -0.5, -0.5, 1.26486, 0.5, -0.5, 1.30987, 0.249902, -0.33056, 1.30987, -0.5, 0.5, 1.17997, 0.5, -0.380579, 1.26486, 0.5, -0.33056, 1.30987, 0.249902)
+
+[node name="wall-half" instance=ExtResource("1_bjofm")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+shape = SubResource("ConvexPolygonShape3D_kq52d")

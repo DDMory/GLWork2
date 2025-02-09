@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="3D_pratices"
-run/main_scene="res://world.tscn"
+run/main_scene="res://castelo.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cbhgrl321o7d8"]
 
-[ext_resource type="PackedScene" uid="uid://bugemdh74tsgl" path="res://Estudos_3D/models/GLB format/crate.glb" id="1_whn62"]
+[ext_resource type="PackedScene" uid="uid://bugemdh74tsgl" path="res://Estudos_3D/models/GLB format-plataform/crate.glb" id="1_whn62"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_b5vsq"]
 size = Vector3(0.5, 0.5, 0.5)

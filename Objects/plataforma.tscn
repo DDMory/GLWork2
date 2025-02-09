@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://4i8hvwxuibsu"]
+
+[ext_resource type="PackedScene" uid="uid://clmjbonbi1f7n" path="res://Estudos_3D/models/GLB format-plataform/platform.glb" id="1_bhni6"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wc0b0"]
+points = PackedVector3Array(-0.5, 0.119985, -0.5, -0.5, 0.157493, -0.5, -0.38009, 0, -0.5, -0.5, 0.119985, 0.5, -0.5, 0.194981, -0.347103, 0.5, 0.194981, -0.5, -0.38009, 0, 0.5, 0.379894, 0, -0.5, -0.5, 0.157493, 0.5, -0.5, 0.194981, 0.347005, 0.5, 0.194981, 0.5, 0.5, 0.119985, -0.5, 0.379894, 0, 0.5, 0.5, 0.119985, 0.5)
+
+[node name="platform" instance=ExtResource("1_bhni6")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+shape = SubResource("ConvexPolygonShape3D_wc0b0")

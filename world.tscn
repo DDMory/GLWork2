@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://de5eg8m4kn27r"]
+[gd_scene load_steps=7 format=3 uid="uid://cu6cbmjmacbpr"]
 
 [ext_resource type="PackedScene" uid="uid://dg7453vrwik2c" path="res://Objects/block_grass_large.tscn" id="1_j1wff"]
 [ext_resource type="Script" path="res://Scripts/world.gd" id="1_v1ngv"]
@@ -279,3 +279,4 @@ shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="cameraHub"]
 transform = Transform3D(-0.998722, 1.3952e-08, 0.0505408, 0.00950678, 0.98215, 0.187861, -0.0496386, 0.188101, -0.980895, -0.253902, 7.39211, -15.3384)
+current = true

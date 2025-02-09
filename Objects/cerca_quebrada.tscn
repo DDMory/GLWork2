@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bg1khrb24pjom"]
 
-[ext_resource type="PackedScene" uid="uid://dkaxqqddmf5hd" path="res://Estudos_3D/models/GLB format/fence-broken.glb" id="1_mjyvl"]
+[ext_resource type="PackedScene" uid="uid://dkaxqqddmf5hd" path="res://Estudos_3D/models/GLB format-plataform/fence-broken.glb" id="1_mjyvl"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ceblh"]
 points = PackedVector3Array(0.449963, 0.4, 0.449998, 0.499958, 0.349961, 0.49, 0.449963, 0.4, 0.35, -0.450035, 0.4, 0.449998, 0.511804, 0.250666, 0.49, 0.499958, 0.349961, 0.449998, -0.50003, 0.349961, 0.49, 0.511804, 0.250666, 0.449998, 0.512607, 0.100783, 0.449998, 0.449963, -3.60956e-16, 0.35, -0.450035, 0.4, 0.35, 0.512607, 0.100783, 0.49, -0.50003, 0.349961, 0.449998, -0.51288, 0.250822, 0.49, 0.449963, -3.60956e-16, 0.449998, -0.450035, -3.60956e-16, 0.35, -0.51288, 0.250822, 0.449998, 0.0414753, 0.0404464, 0.49, -0.506354, 0.100196, 0.49, -0.450035, -3.60956e-16, 0.449998, -0.506354, 0.100196, 0.449998)

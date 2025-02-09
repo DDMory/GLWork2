@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://brmi70ujvg6r1"]
+
+[ext_resource type="PackedScene" uid="uid://l8fjnjyjvoby" path="res://Objects/torre_partes/tower_base.tscn" id="1_2x5sj"]
+[ext_resource type="PackedScene" uid="uid://cpdtvhcxc7tkt" path="res://Objects/torre_partes/tower_mid.tscn" id="2_s0w05"]
+[ext_resource type="PackedScene" uid="uid://g2ms0ea5t7js" path="res://Objects/torre_partes/tower_top.tscn" id="3_64syu"]
+[ext_resource type="PackedScene" uid="uid://bwuvsybw1sn5c" path="res://Objects/torre_partes/tower_square_mid.tscn" id="4_5cjkx"]
+
+[node name="torre_pequena" type="Node3D"]
+
+[node name="tower-square-base-border" parent="." instance=ExtResource("1_2x5sj")]
+
+[node name="tower-square-mid-windows" parent="." instance=ExtResource("2_s0w05")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45, 0)
+
+[node name="tower-square-top-roof-high-windows" parent="." instance=ExtResource("3_64syu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.59584, 0)
+
+[node name="tower-square-mid" parent="." instance=ExtResource("4_5cjkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.46, 0)

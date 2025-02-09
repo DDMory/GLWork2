@@ -1,0 +1,296 @@
+[gd_scene load_steps=11 format=3 uid="uid://blh7br7a80h26"]
+
+[ext_resource type="Script" path="res://Scripts/world.gd" id="1_x18ek"]
+[ext_resource type="PackedScene" uid="uid://dg7453vrwik2c" path="res://Objects/block_grass_large.tscn" id="2_gow7t"]
+[ext_resource type="PackedScene" uid="uid://ccmdm1duwql0p" path="res://Objects/rampa_terra.tscn" id="3_bkbu1"]
+[ext_resource type="PackedScene" uid="uid://blgm6m3kmje5o" path="res://Objects/bau.tscn" id="4_8qbea"]
+[ext_resource type="PackedScene" uid="uid://gwta7a3hfeg3" path="res://Objects/Player/player_3d.tscn" id="5_hk04p"]
+[ext_resource type="PackedScene" uid="uid://d3ybvohismi36" path="res://prefabs/coin.tscn" id="6_m2fdg"]
+[ext_resource type="PackedScene" uid="uid://dm45gpixhvu6m" path="res://Objects/tree_large.tscn" id="7_a1k60"]
+[ext_resource type="PackedScene" uid="uid://brmi70ujvg6r1" path="res://prefabs/torre_pequena.tscn" id="8_nh6b7"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xkv4l"]
+size = Vector2(15, 15)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_v5a5m"]
+data = PackedVector3Array(7.5, 0, 7.5, -7.5, 0, 7.5, 7.5, 0, -7.5, -7.5, 0, 7.5, -7.5, 0, -7.5, 7.5, 0, -7.5)
+
+[node name="world" type="Node3D"]
+script = ExtResource("1_x18ek")
+
+[node name="chao" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.941974, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="chao"]
+mesh = SubResource("PlaneMesh_xkv4l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="chao"]
+shape = SubResource("ConcavePolygonShape3D_v5a5m")
+
+[node name="lvlDesing" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.941974, 0)
+
+[node name="block-grass-large" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="block-grass-large2" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65, 0, 1)
+
+[node name="block-grass-large3" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2.65)
+
+[node name="block-grass-large4" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65, 0, 2.65)
+
+[node name="block-grass-large5" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 4.3)
+
+[node name="block-grass-large6" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65, 0, 4.3)
+
+[node name="block-grass-large7" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 5.95)
+
+[node name="block-grass-large8" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65, 0, 5.95)
+
+[node name="block-grass-large9" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, 5.95)
+
+[node name="block-grass-large10" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 0, 5.95)
+
+[node name="block-grass-large11" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, 1)
+
+[node name="block-grass-large12" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 0, 1)
+
+[node name="block-grass-large13" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, 2.65)
+
+[node name="block-grass-large14" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 0, 2.65)
+
+[node name="block-grass-large15" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, 4.3)
+
+[node name="block-grass-large16" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 0, 4.3)
+
+[node name="block-grass-large17" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6, 0, 1)
+
+[node name="block-grass-large18" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95, 0, 1)
+
+[node name="block-grass-large19" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6, 0, 2.65)
+
+[node name="block-grass-large20" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95, 0, 2.65)
+
+[node name="block-grass-large21" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6, 0, 4.3)
+
+[node name="block-grass-large22" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95, 0, 4.3)
+
+[node name="block-grass-large23" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6, 0, 5.95)
+
+[node name="block-grass-large24" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95, 0, 5.95)
+
+[node name="block-grass-large25" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3, 0, 5.95)
+
+[node name="block-grass-large26" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0, 5.95)
+
+[node name="block-grass-large27" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3, 0, 1)
+
+[node name="block-grass-large28" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0, 1)
+
+[node name="block-grass-large29" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3, 0, 2.65)
+
+[node name="block-grass-large30" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0, 2.65)
+
+[node name="block-grass-large31" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3, 0, 4.3)
+
+[node name="block-grass-large32" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0, 4.3)
+
+[node name="block-grass-large33" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6, 0, -5.6)
+
+[node name="block-grass-large34" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95, 0, -5.6)
+
+[node name="block-grass-large35" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6, 0, -3.95)
+
+[node name="block-grass-large36" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95, 0, -3.95)
+
+[node name="block-grass-large37" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6, 0, -2.3)
+
+[node name="block-grass-large38" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95, 0, -2.3)
+
+[node name="block-grass-large39" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6, 0, -0.65)
+
+[node name="block-grass-large40" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95, 0, -0.65)
+
+[node name="block-grass-large41" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3, 0, -0.65)
+
+[node name="block-grass-large42" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0, -0.65)
+
+[node name="block-grass-large43" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3, 0, -5.6)
+
+[node name="block-grass-large44" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0, -5.6)
+
+[node name="block-grass-large45" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3, 0, -3.95)
+
+[node name="block-grass-large46" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0, -3.95)
+
+[node name="block-grass-large47" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3, 0, -2.3)
+
+[node name="block-grass-large48" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0, -2.3)
+
+[node name="block-grass-large49" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -5.6)
+
+[node name="block-grass-large50" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65, 0, -5.6)
+
+[node name="block-grass-large51" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -3.95)
+
+[node name="block-grass-large52" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65, 0, -3.95)
+
+[node name="block-grass-large53" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -2.3)
+
+[node name="block-grass-large54" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65, 0, -2.3)
+
+[node name="block-grass-large55" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -0.65)
+
+[node name="block-grass-large56" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65, 0, -0.65)
+
+[node name="block-grass-large57" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, -0.65)
+
+[node name="block-grass-large58" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 0, -0.65)
+
+[node name="block-grass-large59" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, -5.6)
+
+[node name="block-grass-large60" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 0, -5.6)
+
+[node name="block-grass-large61" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, -3.95)
+
+[node name="block-grass-large62" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 0, -3.95)
+
+[node name="block-grass-large63" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, -2.3)
+
+[node name="block-grass-large64" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 0, -2.3)
+
+[node name="block-grass-large65" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.05, 2, -1.3)
+
+[node name="block-grass-large66" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.05, 2, 2.7)
+
+[node name="block-grass-large68" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.05, 2, 4.7)
+
+[node name="block-grass-large69" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.05, 2, 4.7)
+
+[node name="block-grass-large70" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.34338, 6.00125, 4.7)
+
+[node name="block-grass-large67" parent="lvlDesing" instance=ExtResource("2_gow7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.05, 2, 3.7)
+
+[node name="block-grass-overhang-large-slope-steep" parent="lvlDesing" instance=ExtResource("3_bkbu1")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.95, 0.784173, -4.10935)
+
+[node name="block-grass-overhang-large-slope-steep2" parent="lvlDesing" instance=ExtResource("3_bkbu1")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.95, 2.78417, 4.70244)
+
+[node name="block-grass-overhang-large-slope-steep3" parent="lvlDesing" instance=ExtResource("3_bkbu1")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.657055, 3.71646, 4.70244)
+
+[node name="block-grass-overhang-large-slope-steep4" parent="lvlDesing" instance=ExtResource("3_bkbu1")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.09256, 4.50676, 4.70244)
+
+[node name="block-grass-overhang-large-slope-steep5" parent="lvlDesing" instance=ExtResource("3_bkbu1")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.69961, 5.43905, 4.70244)
+
+[node name="block-grass-overhang-large-slope-steep6" parent="lvlDesing" instance=ExtResource("3_bkbu1")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.95, 2.78417, 4.70244)
+
+[node name="block-grass-overhang-large-slope-steep7" parent="lvlDesing" instance=ExtResource("3_bkbu1")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.69961, 5.43905, 4.70244)
+
+[node name="block-grass-overhang-large-slope-steep8" parent="lvlDesing" instance=ExtResource("3_bkbu1")]
+transform = Transform3D(0.999971, 0, 0.00766186, 0, 1, 0, -0.00766186, 0, 0.999971, 6.37957, 7.67628, -0.296444)
+
+[node name="block-grass-overhang-large-slope-steep9" parent="lvlDesing" instance=ExtResource("3_bkbu1")]
+transform = Transform3D(0.999971, 0, 0.00766186, 0, 1, 0, -0.00766186, 0, 0.999971, 6.36857, 8.46657, -1.7319)
+
+[node name="block-grass-overhang-large-slope-steep10" parent="lvlDesing" instance=ExtResource("3_bkbu1")]
+transform = Transform3D(0.999971, 0, 0.00766186, 0, 1, 0, -0.00766186, 0, 0.999971, 6.39188, 6.74399, 1.31056)
+
+[node name="block-grass-overhang-large-slope-steep11" parent="lvlDesing" instance=ExtResource("3_bkbu1")]
+transform = Transform3D(0.999971, 0, 0.00766186, 0, 1, 0, -0.00766186, 0, 0.999971, 6.35626, 9.39886, -3.33891)
+
+[node name="chest" parent="lvlDesing" instance=ExtResource("4_8qbea")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.02451, 7.00125, 4.69351)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.475532, -0.00778423, -0.879664, 0.879698, 0.00420786, 0.475514, 0, -0.999961, 0.00884875, -11.2941, 10.7769, 0.00875282)
+light_color = Color(1, 0.6645, 0.39, 1)
+shadow_enabled = true
+
+[node name="player" parent="." instance=ExtResource("5_hk04p")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+
+[node name="Coin" parent="." instance=ExtResource("6_m2fdg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.93036, 1.11747, 1.54881)
+
+[node name="tree-large" parent="." instance=ExtResource("7_a1k60")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1764, 0.266216, -3.59753)
+
+[node name="torre_pequena" parent="." instance=ExtResource("8_nh6b7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.02433, 0.058026, -2.56281)
+
+[connection signal="body_entered" from="Coin" to="Coin" method="_on_body_entered"]
